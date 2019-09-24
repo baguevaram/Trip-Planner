@@ -9,3 +9,10 @@
 3. Oscar Cammilo Pulido Peña
 
 24/09/2019
+
+##How to run:
+
+Go to console prompt (cmd Windows, terminal Linux) and go to the directory of Trip-Planner.
+Once there, type grails run-app to run the application.
+Later, go to your favorite browser and go to localhost:8080 and you'll find the grails app
+
