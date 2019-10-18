@@ -1,7 +1,9 @@
 package trip.planner
-
 class Trip {
-
-    static constraints = {
-    }
+    int id
+    String name
+    Date startDate
+    Date finishDate
+    String airline
+    String place
 }
