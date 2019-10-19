@@ -1,0 +1,15 @@
+.header-search{
+    background-color: #424649;
+    color: #C47335;
+}
+
+.search-field{
+    border-radius: 10px;
+    border: 2px solid #F19953;;
+}
+
+#search{
+    background-color: #588B8B;
+    color: white;
+    border-radius: 10px;
+}

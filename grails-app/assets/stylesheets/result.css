@@ -1,9 +1,3 @@
-#list-trip{
-    background-color: #424649;
-    color: #C47335;
-}
-
-
 thead th{
     background: #588B8B;
 
@@ -14,4 +8,5 @@ table a{
 
 td{
     background: #424649;
+    color: white;
 }

@@ -4,6 +4,7 @@
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'trip.label', default: 'Trip')}" />
         <title><g:message code="default.edit.label" args="[entityName]" /></title>
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'create.css')}" type="text/css">
     </head>
     <body>
         <a href="#edit-trip" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -12,6 +13,7 @@
                 <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
                 <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
                 <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+                <li><g:link class="find" action="find"><g:message code="find" args="[entityName]" /></g:link></li>
             </ul>
         </div>
         <div id="edit-trip" class="content scaffold-edit" role="main">
@@ -32,7 +34,7 @@
                     <f:all bean="trip"/>
                 </fieldset>
                 <fieldset class="buttons">
-                    <input class="save" type="submit" value="${message(code: 'default.button.update.label', default: 'Update')}" />
+                    <input class="edit" type="submit" value="${message(code: 'default.button.update.label', default: 'Update')}" />
                 </fieldset>
             </g:form>
         </div>

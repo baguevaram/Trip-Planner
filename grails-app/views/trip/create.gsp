@@ -4,6 +4,7 @@
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'trip.label', default: 'Trip')}" />
         <title><g:message code="default.create.label" args="[entityName]" /></title>
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'create.css')}" type="text/css">
     </head>
     <body>
         <a href="#create-trip" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -11,8 +12,6 @@
             <ul>
                 <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
                 <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-
-                <li><g:link class="find" action="find"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 
             </ul>
         </div>

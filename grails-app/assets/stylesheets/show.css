@@ -1,0 +1,25 @@
+#show-trip{
+    background-color: #424649;
+    color: #C47335;
+}
+
+.property-label {
+    color: white !important;
+}
+
+.buttons input{
+    background-color: #588B8B;
+    color: white;
+}
+
+.buttons .delete{
+    background-image: url(skin/delete.png);
+    background-size: 20px 20px;
+}
+
+.buttons .edit{
+    background-image: url(skin/edit.png);
+    background-size: 20px 20px;
+    background-color: #588B8B;
+    color: white;
+}

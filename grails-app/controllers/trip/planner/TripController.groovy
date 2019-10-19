@@ -87,44 +87,19 @@ class TripController {
         }
     }
 
-//    def find(Trip trip){
-//        if (trip == null) {
-//            notFound()
-//            return
-//        }
-//        try {
-//            trip.getName()
-//        }catch (ValidationException e) {
-//            respond trip.errors, view:'edit'
-//            return
-//        }
-//
-//        request.withFormat {
-//            form multipartForm {
-//                flash.message = message(code: 'default.updated.message', args: [message(code: 'trip.label', default: 'Trip'), trip.id])
-//                redirect trip
-//            }
-//            '*'{ respond trip, [status: OK] }
-//        }
-//    }
 
-    def find(Trip trip){
-//        trip.name;
-//        params.max = Math.min(max ?: 10, 100)
-//
-//        def somelist = Trip.findAllByName(params.id)
-//        respond Trip.list(params), model:[tripCount: Trip.count(), somelist:somelist]
-    }
 
     def findByName() {
         def results = Trip.findAllByName(params.name)
         [results:results]
     }
 
+
     def results() {
         def results = Trip.findAllByName(params.name)
         [results:results]
     }
+
     protected void notFound() {
         request.withFormat {
             form multipartForm {
