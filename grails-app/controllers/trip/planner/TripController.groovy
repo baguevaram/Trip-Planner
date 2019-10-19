@@ -125,7 +125,6 @@ class TripController {
         def results = Trip.findAllByName(params.name)
         [results:results]
     }
-
     protected void notFound() {
         request.withFormat {
             form multipartForm {
